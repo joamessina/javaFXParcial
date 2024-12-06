@@ -1,0 +1,29 @@
+[
+  {
+    "fechaVencimiento": "2024-12-12",
+    "refrigeracionRequerida": false,
+    "codigo": 1,
+    "nombre": "Manzana",
+    "precio": 15.0,
+    "stock": 17,
+    "tipo": "Alimento"
+  },
+  {
+    "garantiaMeses": 12,
+    "categoriaEnergetica": "B",
+    "codigo": 2,
+    "nombre": "Monitor",
+    "precio": 199.0,
+    "stock": 50,
+    "tipo": "Electrodomestico"
+  },
+  {
+    "fechaVencimiento": "2024-12-08",
+    "refrigeracionRequerida": false,
+    "codigo": 3,
+    "nombre": "papa",
+    "precio": 99.0,
+    "stock": 5,
+    "tipo": "Alimento"
+  }
+]

@@ -1,0 +1,2 @@
+Alimento, Producto{codigo=1, nombre='Manzana', precio=15.0, stock=17}, fechaVencimiento=2024-12-12, refrigeracionRequerida=false}
+Electrodomestico, Producto{codigo=2, nombre='Monitor', precio=199.0, stock=50}, garantiaMeses=12, categoriaEnergetica=B}

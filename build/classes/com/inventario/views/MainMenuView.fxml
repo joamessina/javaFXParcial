@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="645.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventario.controllers.MainMenuController">
+   <children>
+      <GridPane layoutX="150.0" layoutY="64.0" minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="475.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.66668192545572" minWidth="10.0" prefWidth="238.00005594889322" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.33333333333334" minWidth="10.0" prefWidth="121.99994405110678" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="63.666656494140625" minHeight="10.0" prefHeight="63.666656494140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="53.666676839192704" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="161.33333333333331" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="140.6666259765625" minHeight="0.0" prefHeight="79.33333333333331" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="88.99997965494794" minHeight="10.0" prefHeight="76.66666666666669" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="88.6666259765625" minHeight="10.0" prefHeight="83.33331298828125" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="88.6666259765625" minHeight="10.0" prefHeight="83.33331298828125" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#handleAgregarProducto" prefHeight="25.0" prefWidth="190.0" text="Agregar Producto" translateX="16.0" />
+            <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#handleEditarProducto" prefHeight="25.0" prefWidth="190.0" text="Editar Producto" translateX="16.0" GridPane.columnIndex="1" />
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#handleEliminarProducto" prefWidth="190.0" text="Eliminar Producto" translateX="16.0" GridPane.rowIndex="1" />
+            <Button fx:id="btnMostrar" mnemonicParsing="false" onAction="#handleMostrarProductos" prefHeight="25.0" prefWidth="190.0" text="Mostrar Producto" translateX="16.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnCargarJson" mnemonicParsing="false" onAction="#handleCargarJson" prefWidth="190.0" text="Cargar Inventario Json" translateX="16.0" GridPane.rowIndex="2" />
+            <Button fx:id="btnGuardarJson" mnemonicParsing="false" onAction="#handleGuardarJson" prefHeight="25.0" prefWidth="190.0" text="Guardar Inventario en JSON" translateX="16.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnExportarInventarioTexto" mnemonicParsing="false" onAction="#handleExportarInventarioTexto" prefWidth="190.0" text="Exportar Inventario a Texto" translateX="16.0" GridPane.rowIndex="3" />
+            <Button fx:id="btnImportarInventarioTexto" mnemonicParsing="false" onAction="#handleImportarInventarioTexto" prefHeight="25.0" prefWidth="190.0" text="Importar Inventario desde Texto" translateX="16.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnGuardarInventarioArchivo" mnemonicParsing="false" onAction="#handleGuardarInventarioArchivo" prefWidth="190.0" text="Guardar Inventario en Archivo" translateX="16.0" GridPane.rowIndex="4" />
+            <Button fx:id="btnCargarInventarioArchivo" mnemonicParsing="false" onAction="#handleCargarInventarioArchivo" prefHeight="25.0" prefWidth="190.0" text="Cargar Inventario desde Archivo" translateX="16.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Button>
+            <Button onAction="#handleVerEstadisticas" prefWidth="190.0" text="Ver Estadísticas" translateX="16.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="btnFiltrarProductosStockBajo" mnemonicParsing="false" onAction="#handleFiltrarProductosStockBajo" prefWidth="190.0" text="Filtrar Productos por Stock Bajo" translateX="16.0" GridPane.rowIndex="5" />
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#handleSalir" prefHeight="25.0" prefWidth="190.0" text="Salir" translateX="148.0" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+Electrodomestico, Producto{codigo=2, nombre='Televisor', precio=444.0, stock=16}, garantiaMeses=8, categoriaEnergetica=D}
+Electrodomestico, Producto{codigo=2, nombre='asdas', precio=1312.0, stock=2423}, garantiaMeses=111, categoriaEnergetica=C}

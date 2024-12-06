@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.inventario.controllers.EstadisticasController">
+    <children>
+        <VBox spacing="10.0" alignment="CENTER" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <Label text="Estadísticas del Inventario" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            
+            <PieChart fx:id="pieChartDistribucion" prefHeight="200.0" prefWidth="400.0" />
+            <BarChart fx:id="barChartStock" prefHeight="200.0" prefWidth="400.0">
+                <xAxis>
+                    <CategoryAxis label="Categorías" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis label="Stock Total" />
+                </yAxis>
+            </BarChart>
+            <ScatterChart fx:id="scatterChartPrecioStock" prefHeight="200.0" prefWidth="400.0">
+                <xAxis>
+                    <NumberAxis label="Stock" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis label="Precio" />
+                </yAxis>
+            </ScatterChart>
+            
+            <Button text="Volver al Menú Principal" onAction="#handleVolver" />
+        </VBox>
+    </children>
+</AnchorPane>

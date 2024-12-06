@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="355.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventario.controllers.SeleccionarProductoController">
+   <children>
+      <TableView fx:id="tableProductos" layoutX="14.0" layoutY="14.0" prefHeight="280.0" prefWidth="560.0">
+         <columns>
+            <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+            <TableColumn fx:id="colNombre" prefWidth="150.0" text="Nombre" />
+            <TableColumn fx:id="colTipo" prefWidth="100.0" text="Tipo" />
+            <TableColumn fx:id="colPrecio" prefWidth="100.0" text="Precio" />
+            <TableColumn fx:id="colStock" prefWidth="75.0" text="Stock" />
+         </columns>
+      </TableView>
+      <Button layoutX="200.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleSeleccionar" text="Seleccionar" />
+      <Button layoutX="319.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleCancelar" text="Cancelar" />
+   </children>
+</AnchorPane>
